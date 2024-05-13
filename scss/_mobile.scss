@@ -1,0 +1,72 @@
+@include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include mediaMd {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    ul.menu-links, div.menu-photo {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .menu-links {
+        height: 75vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+
+    .menu-photo {
+        height: 25vh;
+        transform: translate3d(100%, 0, 0);
+
+        .photo {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .about-info {
+        grid-template-areas: 
+            'bioimage'
+            'bio'
+            'job1'
+            'job2'
+            'job3';
+
+        grid-template-columns: 1fr;
+    }
+}
+
+@include mediaSm {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    main#home h1 {
+        margin-top: 10vh;
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Package for portfolio project",
+  "homepage": "https://hageli.github.io/frontend_dev",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d Dist"
+  },
+  "author": "Miro Hagelberg",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "node-sass": "^9.0.0"
+  }
+}
