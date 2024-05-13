@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "Package for portfolio project",
-  "homepage": "https://hageli.github.io/frontend_dev",
+  "homepage": "https://hageli.github.io/frontend_tasklist",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
